@@ -131,7 +131,6 @@ dependencies {
     exclude("org.apache.hadoop")
     exclude("org.apache.zookeeper")
     exclude("io.dropwizard.metrics")
-    exclude("org.rocksdb")
   }
   testImplementation(libs.testcontainers)
   testImplementation("org.apache.spark:spark-hive_$scalaVersion:$fullSparkVersion") {
@@ -145,7 +144,6 @@ dependencies {
     exclude("org.apache.hadoop")
     exclude("org.apache.zookeeper")
     exclude("io.dropwizard.metrics")
-    exclude("org.rocksdb")
   }
 
   testRuntimeOnly("org.apache.hudi:hudi-spark$sparkVersion-bundle_$scalaVersion:$hudiVersion")

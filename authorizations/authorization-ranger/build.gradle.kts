@@ -85,7 +85,6 @@ dependencies {
     exclude("org.apache.hadoop")
     exclude("org.apache.zookeeper")
     exclude("io.dropwizard.metrics")
-    exclude("org.rocksdb")
   }
   testImplementation("org.apache.kyuubi:kyuubi-spark-authz-shaded_$scalaVersion:$kyuubiVersion") {
     exclude("com.sun.jersey")

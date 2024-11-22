@@ -122,7 +122,6 @@ dependencies {
     exclude("org.apache.hadoop")
     exclude("org.apache.zookeeper")
     exclude("io.dropwizard.metrics")
-    exclude("org.rocksdb")
   }
   testImplementation(libs.slf4j.api)
   testImplementation(libs.testcontainers)

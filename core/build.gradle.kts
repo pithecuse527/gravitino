@@ -41,7 +41,6 @@ dependencies {
     exclude("com.google.guava", "guava")
       .because("Brings in Guava for Android, which we don't want (and breaks multimaps).")
   }
-  implementation(libs.rocksdbjni)
 
   annotationProcessor(libs.lombok)
 

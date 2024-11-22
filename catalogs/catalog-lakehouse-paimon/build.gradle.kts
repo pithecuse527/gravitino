@@ -136,14 +136,12 @@ dependencies {
   }
   testImplementation("org.apache.spark:spark-hive_$scalaVersion:$sparkVersion") {
     exclude("org.apache.hadoop")
-    exclude("org.rocksdb")
   }
   testImplementation("org.apache.spark:spark-sql_$scalaVersion:$sparkVersion") {
     exclude("org.apache.avro")
     exclude("org.apache.hadoop")
     exclude("org.apache.zookeeper")
     exclude("io.dropwizard.metrics")
-    exclude("org.rocksdb")
   }
   testImplementation("org.apache.paimon:paimon-spark-$sparkMajorVersion:$paimonVersion") {
     exclude("org.apache.hadoop")
